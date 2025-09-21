@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "imgsrc": "https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "destTitle": "Maldives Escape",
+    "location": "Maldives",
+    "grade": "Luxury",
+    "fees": "$2500",
+    "description": "Enjoy crystal-clear waters, overwater villas, and a world-class tropical paradise."
+  },
+  {
+    "id": 2,
+    "imgsrc": "https://images.unsplash.com/photo-1550340499-a6c60fc8287c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "destTitle": "Paris Getaway",
+    "location": "France",
+    "grade": "Romantic",
+    "fees": "$1800",
+    "description": "Discover the Eiffel Tower, Louvre Museum, and stroll along charming Parisian streets."
+  },
+  {
+    "id": 3,
+    "imgsrc": "https://plus.unsplash.com/premium_photo-1661914240950-b0124f20a5c1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "destTitle": "Tokyo Adventure",
+    "location": "Japan",
+    "grade": "Cultural",
+    "fees": "$2000",
+    "description": "Experience futuristic technology, ancient temples, and vibrant Japanese culture."
+  },
+  {
+    "id": 4,
+    "imgsrc": "https://plus.unsplash.com/premium_photo-1689084892324-fd8822cb97c1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "destTitle": "Swiss Alps Tour",
+    "location": "Switzerland",
+    "grade": "Adventure",
+    "fees": "$2200",
+    "description": "Ski, hike, or simply enjoy breathtaking views of the snow-capped Alps."
+  },
+  {
+    "id": 5,
+    "imgsrc": "https://plus.unsplash.com/premium_photo-1697729914552-368899dc4757?q=80&w=812&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "destTitle": "Dubai Luxury Trip",
+    "location": "UAE",
+    "grade": "Luxury",
+    "fees": "$2400",
+    "description": "Skyscrapers, desert safaris, luxury shopping, and man-made islands await."
+  },
+  {
+    "id": 6,
+    "imgsrc": "https://images.unsplash.com/photo-1602940659805-770d1b3b9911?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "destTitle": "New York City Break",
+    "location": "USA",
+    "grade": "Urban",
+    "fees": "$1700",
+    "description": "The city that never sleeps offers Times Square, Broadway, and Central Park."
+  },
+  {
+    "id": 7,
+    "imgsrc": "https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "destTitle": "Santorini Escape",
+    "location": "Greece",
+    "grade": "Romantic",
+    "fees": "$2100",
+    "description": "Blue domes, white houses, and unforgettable sunsets over the Aegean Sea."
+  },
+  {
+    "id": 8,
+    "imgsrc": "https://plus.unsplash.com/premium_photo-1661878915254-f3163e91d870?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "destTitle": "Bali Retreat",
+    "location": "Indonesia",
+    "grade": "Wellness",
+    "fees": "$1500",
+    "description": "Relax with yoga retreats, rice terraces, and serene beaches in Bali."
+  },
+  {
+    "id": 9,
+    "imgsrc": "https://plus.unsplash.com/premium_photo-1661942639073-0ce0171046dd?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "destTitle": "Rome Heritage Tour",
+    "location": "Italy",
+    "grade": "Cultural",
+    "fees": "$1900",
+    "description": "Walk through the Colosseum, Roman Forum, and Vatican City."
+  },
+  {
+    "id": 10,
+    "imgsrc": "https://plus.unsplash.com/premium_photo-1697730221799-f2aa87ab2c5d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "destTitle": "Sydney Explorer",
+    "location": "Australia",
+    "grade": "Adventure",
+    "fees": "$2000",
+    "description": "Visit the Sydney Opera House, Bondi Beach, and enjoy a vibrant Aussie vibe."
+  },
+  {
+    "id": 11,
+    "imgsrc": "https://images.unsplash.com/photo-1600520611035-84157ad4084d?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "destTitle": "Cairo Pyramids Tour",
+    "location": "Egypt",
+    "grade": "Historical",
+    "fees": "$1600",
+    "description": "Explore the Great Pyramids of Giza, Sphinx, and the rich history of ancient Egypt."
+  },
+  {
+    "id": 12,
+    "imgsrc": "https://plus.unsplash.com/premium_photo-1697730061063-ad499e343f26?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "destTitle": "Cape Town Discovery",
+    "location": "South Africa",
+    "grade": "Adventure",
+    "fees": "$1750",
+    "description": "Enjoy Table Mountain views, beaches, and a mix of culture and wildlife."
+  }
+]

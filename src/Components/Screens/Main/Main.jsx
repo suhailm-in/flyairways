@@ -18,7 +18,7 @@ const Main = () => {
                 <h3 data-aos="fade-right" className="title">Most visited destination</h3>
             </div>
             <div className="secContent grid">
-                {locations.map((place) => (
+                {locations.slice(0, 6).map((place) => (
                     <div key={place.id} className="cardPlace" data-aos="fade-up">
                         <div className="imgdiv">
                             <img src={place.imgsrc} alt={place.destTitle} />

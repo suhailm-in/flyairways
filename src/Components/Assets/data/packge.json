@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "imgsrc": "https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Maldives Luxury 5-Day Package",
+    "duration": "5 Days / 4 Nights",
+    "price": "$2500",
+    "features": ["Flight", "Hotel", "Spa", "Excursion"],
+    "description": "Experience crystal-clear waters, overwater villas, and luxury services in Maldives."
+  },
+  {
+    "id": 2,
+    "imgsrc": "https://images.unsplash.com/photo-1550340499-a6c60fc8287c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Paris Weekend Getaway",
+    "duration": "3 Days / 2 Nights",
+    "price": "$1200",
+    "features": ["Flight", "Hotel", "City Tour"],
+    "description": "Explore the romantic city of Paris with guided tours and cultural experiences."
+  },
+  {
+    "id": 3,
+    "imgsrc": "https://plus.unsplash.com/premium_photo-1661914240950-b0124f20a5c1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Tokyo Adventure Package",
+    "duration": "6 Days / 5 Nights",
+    "price": "$1800",
+    "features": ["Flight", "Hotel", "City Tour", "Food Tour"],
+    "description": "Discover Tokyo's vibrant city life, culture, and delicious cuisine."
+  },
+  {
+    "id": 4,
+    "imgsrc": "https://plus.unsplash.com/premium_photo-1689084892324-fd8822cb97c1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Switzerland Alpine Escape",
+    "duration": "7 Days / 6 Nights",
+    "price": "$3200",
+    "features": ["Flight", "Hotel", "Ski Pass", "Excursion"],
+    "description": "Enjoy the breathtaking Swiss Alps with skiing, sightseeing, and cozy lodges."
+  },
+  {
+    "id": 5,
+    "imgsrc": "https://images.unsplash.com/photo-1602940659805-770d1b3b9911?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "New York City Explorer",
+    "duration": "4 Days / 3 Nights",
+    "price": "$1500",
+    "features": ["Flight", "Hotel", "City Tour"],
+    "description": "Visit iconic landmarks like Times Square, Central Park, and Broadway shows."
+  },
+  {
+    "id": 6,
+    "imgsrc": "https://plus.unsplash.com/premium_photo-1661878915254-f3163e91d870?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Bali Tropical Retreat",
+    "duration": "5 Days / 4 Nights",
+    "price": "$2000",
+    "features": ["Flight", "Resort", "Spa", "Excursion"],
+    "description": "Relax in Bali’s tropical paradise with beaches, resorts, and cultural experiences."
+  },
+  {
+    "id": 7,
+    "imgsrc": "https://images.unsplash.com/photo-1574227492706-f65b24c3688a?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Singapore Family Package",
+    "duration": "4 Days / 3 Nights",
+    "price": "$1400",
+    "features": ["Flight", "Hotel", "Theme Park", "City Tour"],
+    "description": "Perfect for families: explore attractions like Sentosa, Marina Bay Sands, and Universal Studios."
+  },
+  {
+    "id": 8,
+    "imgsrc": "https://images.unsplash.com/photo-1600520611035-84157ad4084d?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Egypt Historical Tour",
+    "duration": "6 Days / 5 Nights",
+    "price": "$2300",
+    "features": ["Flight", "Hotel", "Pyramid Tour", "Cruise"],
+    "description": "Discover the wonders of Egypt, including the Pyramids of Giza and Nile River cruise."
+  },
+  {
+    "id": 9,
+    "imgsrc": "https://plus.unsplash.com/premium_photo-1661964149725-fbf14eabd38c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Greece Island Hopping",
+    "duration": "7 Days / 6 Nights",
+    "price": "$2700",
+    "features": ["Flight", "Hotel", "Boat Tour", "Excursion"],
+    "description": "Experience the beauty of Greek islands with sun, sea, and cultural excursions."
+  },
+  {
+    "id": 10,
+    "imgsrc": "https://plus.unsplash.com/premium_photo-1661942639073-0ce0171046dd?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Italy Cultural Journey",
+    "duration": "8 Days / 7 Nights",
+    "price": "$3000",
+    "features": ["Flight", "Hotel", "City Tour", "Food Tour"],
+    "description": "Explore Italy’s art, history, and cuisine in Rome, Venice, and Florence."
+  },
+  {
+  "id": 11,
+  "imgsrc": "https://images.unsplash.com/photo-1566914447826-bf04e54bf1be?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "title": "Malaysia Tropical Adventure",
+  "duration": "5 Days / 4 Nights",
+  "price": "$1800",
+  "features": ["Flight", "Hotel", "City Tour", "Island Excursion"],
+  "description": "Explore Malaysia’s vibrant cities, tropical islands, and cultural landmarks."
+},
+{
+  "id": 12,
+  "imgsrc": "https://images.unsplash.com/photo-1473654729523-203e25dfda10?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "title": "Iceland Northern Lights Tour",
+  "duration": "6 Days / 5 Nights",
+  "price": "$3500",
+  "features": ["Flight", "Hotel", "Guided Tours", "Excursion"],
+  "description": "Witness the magical Northern Lights and explore Iceland’s glaciers and waterfalls."
+}
+]

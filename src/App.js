@@ -8,9 +8,10 @@ import Contact from "./Components/Screens/Contact/Contact";
 import Login from "./Components/Screens/Login/Login";
 import Signup from "./Components/Screens/Signup/Signup";
 import About from "./Components/Screens/About/About";
-import Places from "./Components/Screens/Packages/Places";
-import Place from "./Components/Screens/Packages/Place";
 import NotFound from "./Components/Screens/NotFound/NotFound";
+import Destinations from "./Components/Screens/Destinations/Destinations";
+import Packages from "./Components/Screens/Packages/Packages";
+import Place from "./Components/Screens/Place/Place";
 
 function App() {
     return (
@@ -18,10 +19,11 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="about" element={<About />} />
+                <Route path="destination" element={<Destinations />} />
                 <Route path="contact" element={<Contact />} />
                 <Route path="login" element={<Login />} />
                 <Route path="signup" element={<Signup />} />
-                <Route path="places" element={<Places />} />
+                <Route path="packages" element={<Packages />} />
                 <Route path="Place" element={<Place />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>

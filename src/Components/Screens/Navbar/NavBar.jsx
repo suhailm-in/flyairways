@@ -28,22 +28,22 @@ const NavBar = () => {
 				<div className={active}>
 					<ul className="navLists flex">
 						<li className="navItem">
-							<NavLink to="/" className="navLink">Home</NavLink>
+							<NavLink to="/" className={({ isActive }) => isActive ? "navLink active" : "navLink"}>Home</NavLink>
 						</li>
 						<li className="navItem">
-							<NavLink to="/about" className="navLink">About</NavLink>
+							<NavLink to="/about" className={({ isActive }) => isActive ? "navLink active" : "navLink"}>About</NavLink>
 						</li>
 						<li className="navItem">
-							<NavLink to="/places" className="navLink">Package</NavLink>
+							<NavLink to="/places" className={({ isActive }) => isActive ? "navLink active" : "navLink"}>Package</NavLink>
 						</li>
 						<li className="navItem">
-							<NavLink to="/" className="navLink">Pages</NavLink>
+							<NavLink to="/blogs" className={({ isActive }) => isActive ? "navLink active" : "navLink"}>Blogs</NavLink>
 						</li>
 						<li className="navItem">
-							<NavLink to="/" className="navLink">News</NavLink>
+							<NavLink to="/news" className={({ isActive }) => isActive ? "navLink active" : "navLink"}>News</NavLink>
 						</li>
 						<li className="navItem">
-							<NavLink to="/contact" className="navLink">Contact</NavLink>
+							<NavLink to="/contact" className={({ isActive }) => isActive ? "navLink active" : "navLink"}>Contact</NavLink>
 						</li>
 						<li className="navBarBtn flex">
 							<Link to="/login" className="btn">BOOK NOW</Link>
@@ -68,3 +68,6 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+
+// {({ isActive }) => isActive ? "navLink active" : "navLink"}

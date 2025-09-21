@@ -35,6 +35,16 @@
             transform: translateY(5px);
         }
     }
+    .navLists{
+        .navItem{
+            a.active {
+                border-bottom: 1px solid #000;
+                &:hover{
+                    border-color: var(--PrimaryColor);
+                }
+            }
+        }
+    }
 
     @media screen and (max-width: 868px){
         .navBar{
@@ -127,7 +137,7 @@
                 .navItem{
                     .navLink{
                         color: var(--textColor);
-                        padding: 0 0.45rem;
+                        margin-right: 18px;
                         font-size: 0.9rem;
                         font-weight: 500;
 

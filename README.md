@@ -26,7 +26,9 @@ SCSS / CSS3 – Styling -->
 📌 App Info
 
 Name: FlyAirways
+
 Type: Travel Booking Application
+
 Goal: Provide a simple, modern, and fast way to explore and book travel destinations.
 
 ---

@@ -4,7 +4,7 @@ import "./Login.css";
 import NavBar from "../Navbar/NavBar";
 import axios from "axios";
 import { BASE_URL } from "../../../axiosConfig";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
     const [formData, setFormData] = useState({ email: "", password: "" });
@@ -80,7 +80,7 @@ const Login = () => {
                             {message && <small className="errorMsg">{message}</small>}
                         </form>
 
-                        <p className="forgot-password">Forgot Password?</p>
+                        <Link to="/forgotpass" className="forgot-password">Forgot Password?</Link>
 
                         <div className="social-login">
                             <p>Or continue with</p>

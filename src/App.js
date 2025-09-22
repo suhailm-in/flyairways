@@ -14,6 +14,7 @@ import Place from "./Components/Screens/Place/Place";
 import PackgesDetails from "./Components/Screens/PackgesDetails/PackgesDetails";
 import Blogs from "./Components/Screens/Blogs/Blogs";
 import Profile from "./Components/Screens/Profile/Profile";
+import ForgotPassword from "./Components/Screens/ForgotPassword/ForgotPassword";
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/profile" element={<Profile />} />
+                <Route path="/forgotpass" element={<ForgotPassword />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </Router>

@@ -1,0 +1,76 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColors: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+}
+
+/* Page wrapper */
+.notfound-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: var(--whiteColor);
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Container */
+.notfound-container h1 {
+  font-size: 8rem;
+  font-weight: bold;
+  background: var(--gradientColor);
+  background-clip: text;             /* Standard */
+  -webkit-background-clip: text;     /* For WebKit browsers */
+  color: transparent;                /* Ensures text is transparent */
+  -webkit-text-fill-color: transparent; /* Safari fix */
+  margin-bottom: 1rem;
+}
+.notfound-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: var(--blackColor);
+}
+
+.notfound-container p {
+  font-size: 1.2rem;
+  color: var(--textColor);
+  margin-bottom: 2rem;
+}
+
+/* Button */
+.home-btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  background: var(--gradientColor);
+  color: var(--whiteColor);
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .notfound-container h1 {
+    font-size: 5rem;
+  }
+  .notfound-container h2 {
+    font-size: 1.8rem;
+  }
+  .notfound-container p {
+    font-size: 1rem;
+  }
+}

@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "./home.css";
 import video from "../../Assets/videos/city_night01.mp4";
+// import video2 from "../../Assets/videos/road_video_1.mp4";
+// import video3 from "../../Assets/videos/road_video_2.mp4";
 import { GoLocation } from "react-icons/go";
 import { HiFilter } from "react-icons/hi";
 import { FiFacebook } from "react-icons/fi";
@@ -20,6 +22,7 @@ const Home = () => {
 
 	useEffect(()=>{
 		Aos.init({duration: 2000})
+		
 	}, [])
 
     return (

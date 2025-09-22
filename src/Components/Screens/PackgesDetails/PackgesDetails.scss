@@ -14,6 +14,9 @@
   --cardHover: rgb(255, 255, 255);
 }
 
+body {
+  padding-top: 0;
+}
 /* Page Wrapper */
 .packages-wrapper {
   background: var(--bodyColor);

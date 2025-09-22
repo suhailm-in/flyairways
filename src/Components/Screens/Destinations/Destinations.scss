@@ -1,143 +1,184 @@
-.destinations-wrapper {
-  padding: 24px;
-  max-width: 1200px;
-  margin: 0 auto;
-  font-family: "Inter", sans-serif;
+:root{
+	--PrimaryColor: hsl(199, 100%, 33%);
+	--SecondaryColors: hsl(187, 85%, 43%);
+	--gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),  hsl(199, 100%, 33%));
+	--whiteColor: hsl(0, 0%,100%);
+	--blackColor: hsl(201, 33%,16%);
+	--textColor: hsl(240,4%, 36%);
+	--whiteColorDeams: hsl(0, 0%, 93%);
+	--greyText: rgb(199, 190, 190);
+	--InputColor:rgb(239, 239, 239);
+	--bodyColor: rgb(240, 240, 246);
+	--cardBG: rgb(225, 225, 235);
+    --cardHover: rgb(255, 255, 255);
+}
+.main{
+    width: 100%;
+    margin-bottom: 2rem;
 
-  .destinations-hero {
-    text-align: center;
-    margin-bottom: 32px;
-    margin-top: 100px;
+    .destinations-hero {
+        text-align: center;
+        margin-bottom: 32px;
+        padding-top: 120px;
+        h1 {
+            font-size: 28px;
+            margin-bottom: 12px;
+        }
 
-    h1 {
-      font-size: 28px;
-      margin-bottom: 12px;
+        p {
+            color: #6b7280;
+            font-size: 16px;
+        }
     }
+    // .secTitle{
+        // .title{
+        //     position: relative;
+        //     width: max-content;
+        //     color: var(--textColor);
+        //     margin: 1rem 0;
+        //     z-index: 2;
 
-    p {
-      color: #6b7280;
-      font-size: 16px;
-    }
-  }
+        //     &::after{
+        //         position: absolute;
+        //         content: "";
+        //         background: var(--SecondaryColors);
+        //         height: 5px;
+        //         width: 110px;
+        //         right: 0;
+        //         bottom: 5px;
+        //         z-index: -1;
+        //     }
+        // }
+        
+    // }
+    .secContent{
+        justify-content: center;
+        gap: 1.5rem;
 
-  .destinations-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-
-    .destination-card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 6px 20px rgba(9, 30, 66, 0.08);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-
-      .imgdiv {
-        width: 100%;
-        height: 200px;
-        overflow: hidden;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: transform 0.3s ease;
-        }
-
-        &:hover img {
-          transform: scale(1.05);
-        }
-      }
-
-      .card-info {
-        padding: 16px;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-
-        .destTitle {
-          font-size: 18px;
-          font-weight: 600;
-        }
-
-        .location {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-          color: #6b7280;
-          font-size: 14px;
-
-          .icon {
-            color: #0066ff;
-          }
-        }
-
-        .fees {
-          display: flex;
-          justify-content: space-between;
-          margin: 8px 0;
-
-          .grade {
-            span {
-              font-weight: 600;
-              small {
-                margin-left: 4px;
-                font-size: 12px;
-                color: #6b7280;
-              }
+        .cardPlace{
+            height: 100%;
+            display: grid;
+            row-gap: 10px;
+            border-radius: 10px;
+            align-items: center;
+            background: var(--cardBG);
+            box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+            overflow: hidden;
+            &:hover{
+                background: var(--cardHover);
+                box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);box-shadow: 1 4px 4px;
+                transition: .3s ease;
             }
-          }
+            .imgdiv{
+                height: 180px;
+                width: 100%;
+                overflow: hidden;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: 2s ease;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .cardInfo{
+                padding: 1rem;
+                .destTitle{
+                    color: var(--blackColor);
+                    font-size: 1.25rem;
+                }
+                .spanContant{
+                    gap: .5rem;
+                    .icon{
+                        color: var(--textColor);
+                        font-size: 18px;
+                    }
+                    .name{
+                        color: var(--textColor);
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+                .fees{
+                    width: 100%;
+                    justify-content: space-between;
+                    padding: 1rem;
+                    margin: 1rem 0;
+                    border-top: 1.5px solid var(--greyText);
+                    border-bottom: 1.5px solid var(--greyText);
 
-          .price h5 {
-            font-size: 16px;
-            color: #0066ff;
-            font-weight: 700;
-          }
+                    .grade{
+                        color: var(--textColor);
+                        max-width: 100px;
+                        line-height: 20px;
+                        display: flex;
+                        justify-content: center;
+
+                        small{
+                            text-align: center;
+                            background: var(--gradientColor);
+                            border-radius: 1rem;
+                            color: var(--whiteColor);
+                            padding: 1px 10px;
+                            font-size: 10px;
+                            margin-left: 5px;
+                        }
+                    }
+                    .price{
+                        font-size: 2rem;
+                        color: var(--blackColor);
+                    }
+
+                }
+                .desc{
+                    font-size: 13.5px;
+                    color: var(--textColor);
+                    font-weight: 500;
+                }
+                .btn{
+                    margin-top: 1rem;
+                    color: var(--whiteColor);
+                    font-weight: 600;
+                    justify-content: space-between;
+                    gap: .5rem;
+
+                    .icon{
+                        align-self: center;
+                        font-size: 18px;
+                    }
+                }
+            }
         }
-
-        .desc {
-          font-size: 14px;
-          color: #6b7280;
-        }
-
-        .btn {
-          margin-top: 12px;
-          background: #0066ff;
-          color: #fff;
-          border: none;
-          border-radius: 8px;
-          padding: 10px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 6px;
-          cursor: pointer;
-          font-weight: 600;
-          transition: background 0.3s ease;
-
-          &:hover {
-            background: #0051cc;
-          }
-
-          .icon {
-            font-size: 16px;
-          }
-        }
-      }
     }
-  }
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .destinations-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media screen and (min-width: 500px) {
+    .title{
+        font-size: 1.5rem;
+        &::after{
+            width: 143px !important;
+        }
+    }
+
+    .secContent{
+        grid-template-columns: repeat(2, 1fr);
+
+        .cardPlace{
+            height: auto;
+        }
+    }
 }
 
-@media (max-width: 600px) {
-  .destinations-grid {
-    grid-template-columns: 1fr;
-  }
+@media screen and (min-width: 869px) {
+    .secContent{
+        grid-template-columns: repeat(3, 1fr);
+
+        .cardPlace{
+            height: auto;
+        }
+    }
 }

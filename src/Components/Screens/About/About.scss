@@ -192,7 +192,7 @@
 
 
 /* Responsive */
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .about-hero {
     flex-direction: column;
 
@@ -201,6 +201,7 @@
       min-height: 200px;
     }
   }
+  
 
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -211,7 +212,13 @@
   }
 }
 
-@media (max-width: 520px) {
+@media screen and (max-width: 620px) {
+  .btn-last {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 520px) {
   .grid {
     grid-template-columns: 1fr;
   }
@@ -219,5 +226,12 @@
   .about-hero .hero-content h1 {
     font-size: 22px;
   }
+
+  .btn-ghost{
+    display: none;
+  }
+  
 }
 
+
+// @media screen and (min-width: 500px) {}

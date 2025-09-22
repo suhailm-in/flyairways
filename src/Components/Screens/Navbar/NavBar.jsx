@@ -43,9 +43,6 @@ const NavBar = () => {
 							<NavLink to="/blogs" className={({ isActive }) => isActive ? "navLink active" : "navLink"}>Blogs</NavLink>
 						</li>
 						<li className="navItem">
-							<NavLink to="/news" className={({ isActive }) => isActive ? "navLink active" : "navLink"}>News</NavLink>
-						</li>
-						<li className="navItem">
 							<NavLink to="/contact" className={({ isActive }) => isActive ? "navLink active" : "navLink"}>Contact</NavLink>
 						</li>
 						<li className="navBarBtn flex">

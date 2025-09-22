@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Top 10 Travel Destinations in 2025",
+    "author": "FlyAirways Team",
+    "date": "Sep 10, 2025",
+    "image": "https://plus.unsplash.com/premium_photo-1683147650005-f3fb286a458c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Discover the must-visit destinations this year for adventure, relaxation, and culture."
+  },
+  {
+    "id": 2,
+    "title": "How to Travel on a Budget",
+    "author": "FlyAirways Travel Expert",
+    "date": "Aug 22, 2025",
+    "image": "https://plus.unsplash.com/premium_photo-1726761618867-c3a234c0ea0b?q=80&w=924&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Tips and tricks to explore the world without breaking the bank."
+  },
+  {
+    "id": 3,
+    "title": "5 Luxury Resorts You Must Visit",
+    "author": "FlyAirways Team",
+    "date": "Jul 15, 2025",
+    "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description": "Experience the best in luxury travel with these amazing resorts."
+  },
+  {
+    "id": 4,
+    "title": "Adventure Activities Around the World",
+    "author": "FlyAirways Adventure Expert",
+    "date": "Jun 30, 2025",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0",
+    "description": "From skydiving to deep-sea diving, explore thrilling adventures for every traveler."
+  },
+  {
+    "id": 5,
+    "title": "Culinary Travel: Foodie Destinations",
+    "author": "FlyAirways Culinary Team",
+    "date": "May 18, 2025",
+    "image": "https://images.unsplash.com/photo-1543353071-873f17a7a088?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0",
+    "description": "Savor the best cuisines around the world with our top foodie travel recommendations."
+  },
+  {
+    "id": 6,
+    "title": "Eco-Friendly Travel Tips",
+    "author": "FlyAirways Sustainability Team",
+    "date": "Apr 10, 2025",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0",
+    "description": "Learn how to travel responsibly and reduce your environmental impact on your trips."
+  }
+]

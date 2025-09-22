@@ -1,22 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../Navbar/NavBar";
 import "./About.css";
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 const About = () => {
+
+    useEffect(()=>{
+            Aos.init({duration: 2000})
+        }, [])
+
     return (
         <>
             <NavBar />
             <main className="about-wrapper">
                 {/* Hero Section */}
                 <section className="about-hero">
-                    <div
+                    <div data-aos="fade-right"
                         className="hero-media"
                         role="img"
                         aria-label="Flying over islands"
                     ></div>
 
-                    <div className="hero-content">
+                    <div data-aos="fade-up" className="hero-content">
                         <span className="brand">FlyAirways</span>
                         <h1>Travel made simple. Journeys made memorable.</h1>
                         <p className="lead">
@@ -28,10 +36,10 @@ const About = () => {
                         </p>
 
                         <div className="cta-row">
-                            <button className="btn">Explore Packages</button>
-                            <button className="btn btn-ghost">
+                            <Link to="/packages" className="btn">Explore Packages</Link>
+                            <Link to="/contact" className="btn btn-ghost">
                                 Contact Support
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </section>
@@ -40,7 +48,7 @@ const About = () => {
                 <section className="about-highlights">
                     <h2 className="section-label">Why FlyAirways</h2>
                     <div className="grid">
-                        <article className="card">
+                        <article data-aos="fade-up" className="card">
                             <h3>Curated Destinations</h3>
                             <p>
                                 Handpicked spots with trusted reviews, beautiful
@@ -48,7 +56,7 @@ const About = () => {
                             </p>
                         </article>
 
-                        <article className="card">
+                        <article data-aos="fade-up" className="card">
                             <h3>Flexible Packages</h3>
                             <p>
                                 Choose packages that match your budget and
@@ -56,7 +64,7 @@ const About = () => {
                             </p>
                         </article>
 
-                        <article className="card">
+                        <article data-aos="fade-up" className="card">
                             <h3>Secure Bookings</h3>
                             <p>
                                 Safe checkout and clear policies so you can book
@@ -69,7 +77,7 @@ const About = () => {
                 {/* Vision & Mission */}
                 <section className="about-vision">
                     <div className="two-col">
-                        <div className="panel">
+                        <div data-aos="fade-up" className="panel">
                             <h3>Our Mission</h3>
                             <p>
                                 To make travel planning seamless and accessible
@@ -80,7 +88,7 @@ const About = () => {
                             </p>
                         </div>
 
-                        <div className="panel">
+                        <div data-aos="fade-up" className="panel">
                             <h3>Our Vision</h3>
                             <p>
                                 To be the travel platform people trust for fast,
@@ -119,7 +127,7 @@ const About = () => {
                             </p>
                         </div>
                         <div>
-                            <button className="btn">Book Now</button>
+                            <Link to="/packages" className="btn btn-last">Book Now</Link>
                         </div>
                     </div>
                 </section>

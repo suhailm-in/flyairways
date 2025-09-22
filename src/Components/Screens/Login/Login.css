@@ -1,1 +1,99 @@
-/*# sourceMappingURL=Login.css.map */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  font-family: "Poppins", sans-serif;
+}
+.login-page .login-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin-top: 132px;
+}
+.login-page .login-container h2 {
+  margin-bottom: 0.5rem;
+  color: #1a202c;
+}
+.login-page .login-container p {
+  margin-bottom: 1.5rem;
+  color: #4a5568;
+  font-size: 0.95rem;
+}
+.login-page .login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.login-page .login-container form input {
+  padding: 0.8rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s;
+}
+.login-page .login-container form input:focus {
+  border-color: #3182ce;
+}
+.login-page .login-container form button {
+  background: #3182ce;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.login-page .login-container form button:hover {
+  background: #2c5282;
+}
+.login-page .login-container .forgot-password {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #3182ce;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.login-page .login-container .social-login {
+  margin-top: 1.5rem;
+}
+.login-page .login-container .social-login p {
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+}
+.login-page .login-container .social-login .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #2d3748;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.login-page .login-container .social-login .social-icons:hover {
+  color: #3182ce;
+}
+.login-page .login-container .signup-link {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #4a5568;
+}
+.login-page .login-container .signup-link a {
+  color: #3182ce;
+  text-decoration: underline;
+  margin-left: 0.3rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1.5rem;
+  }
+}/*# sourceMappingURL=Login.css.map */

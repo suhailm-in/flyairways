@@ -13,8 +13,10 @@ import 'aos/dist/aos.css';
 import NavBar from "../Navbar/NavBar";
 import Main from "../Main/Main";
 import Footer from "../Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+	const navigate = useNavigate();
 
 	useEffect(()=>{
 		Aos.init({duration: 2000})
@@ -62,7 +64,7 @@ const Home = () => {
 					</div>
 					<div className="searchOption flex">
 						<HiFilter className="icon" />
-						<span>MORE FILTTER</span>
+						<span onClick={()=>navigate("/packages")} >MORE FILTTER</span>
 					</div>
 				</div>
 

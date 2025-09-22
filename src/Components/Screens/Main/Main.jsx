@@ -5,6 +5,7 @@ import { GrLocation } from "react-icons/gr";
 import { BsClipboardCheck } from "react-icons/bs";
 import Aos from "aos";
 import 'aos/dist/aos.css';
+import { Link } from "react-router-dom";
 
 const Main = () => {
 
@@ -43,9 +44,9 @@ const Main = () => {
                             <div className="desc">
                                 <p>{place.description}</p>
                             </div>
-                            <button className="btn flex">
+                            <Link to="/packages" className="btn flex">
                                 DETAILS <BsClipboardCheck className="icon" />
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 ))}

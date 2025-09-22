@@ -2,6 +2,7 @@
   --PrimaryColor: hsl(199, 100%, 33%);
   --SecondaryColors: hsl(187, 85%, 43%);
   --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --gradientColorRev: linear-gradient(to left, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
   --whiteColor: hsl(0, 0%, 100%);
   --blackColor: hsl(201, 33%, 16%);
   --textColor: hsl(240, 4%, 36%);
@@ -197,11 +198,22 @@
 }
 
 /* Button */
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  gap: 4px;
+}
+
 .btn-packege {
-  width: 100%;
+  width: 50%;
   padding: 0.8rem;
   border: none;
-  border-radius: 0.8rem;
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border: 1px solid var(--PrimaryColor);
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -209,6 +221,34 @@
   align-items: center;
   justify-content: center;
   display: flex;
+}
+.btn-packege:hover {
+  background: var(--whiteColor);
+  color: var(--PrimaryColor);
+}
+
+.btn-view {
+  width: 50%;
+  padding: 0.8rem;
+  border: none;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--PrimaryColor);
+  background: var(--whiteColor);
+  border: 1px solid var(--PrimaryColor);
+  cursor: pointer;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.btn-view:hover {
+  background: var(--gradientColorRev);
+  color: var(--whiteColor);
 }
 
 .btn:hover {

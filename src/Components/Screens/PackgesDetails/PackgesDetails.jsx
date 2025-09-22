@@ -5,6 +5,7 @@ import { BsClipboardCheck } from "react-icons/bs";
 import NavBar from "../Navbar/NavBar";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const PackgesDetails = () => {
     const [filters, setFilters] = useState({
@@ -115,11 +116,17 @@ const PackgesDetails = () => {
                                             )}
                                         </div>
                                     </div>
-
-                                    <button className="btn btn-packege flex">
-                                        BOOK NOW{" "}
-                                        <BsClipboardCheck className="icon" />
-                                    </button>
+									<div className="buttonDiv">
+										<Link to={`${pkg.id}`} className="btn btn-view flex">
+											ViEW MORE{" "}
+											<BsClipboardCheck className="icon" />
+										</Link>
+										<button className="btn btn-packege flex">
+											BOOK NOW{" "}
+											<BsClipboardCheck className="icon" />
+										</button>
+									</div>
+									
                                 </div>
                             </div>
                         ))

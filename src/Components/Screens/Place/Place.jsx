@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Place.css";
 import NavBar from "../Navbar/NavBar";
+import { BASE_URL } from "../../../axiosConfig";
 
 const PlaceSingle = () => {
   const { id } = useParams(); // get place id from URL
@@ -12,7 +13,7 @@ const PlaceSingle = () => {
   useEffect(() => {
     const fetchPlace = async () => {
       try {
-        const response = await axios.get(`https://traveller.talrop.works/api/v1/places/view/${id}/`);
+        const response = await axios.get(`${BASE_URL}/places/view/${id}/`);
         setPlace(response.data.data);
       } catch (error) {
         console.error("Error fetching place:", error);

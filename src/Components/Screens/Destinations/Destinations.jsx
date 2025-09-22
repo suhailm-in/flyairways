@@ -7,6 +7,7 @@ import NavBar from "../Navbar/NavBar";
 import Footer from "../Footer/Footer";
 import Aos from "aos";
 import 'aos/dist/aos.css';
+import { Link } from "react-router-dom";
 
 const Destinations = () => {
 
@@ -56,9 +57,9 @@ const Destinations = () => {
                             <div className="desc">
                                 <p>{place.description}</p>
                             </div>
-                            <button className="btn flex">
+                            <Link to={`/packages/${place.id}`} className="btn flex">
                                 DETAILS <BsClipboardCheck className="icon" />
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 ))}

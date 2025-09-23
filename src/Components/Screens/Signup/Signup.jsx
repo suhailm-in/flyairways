@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import "./Signup.css";
 import NavBar from "../Navbar/NavBar";
+import axios from "axios";
+import { BASE_URL } from "../../../axiosConfig";
+import { useNavigate } from "react-router-dom";
+import { UserContext } from "../../../App";
+// import { data } from "react-router-dom";
 
 const Signup = () => {
     const [formData, setFormData] = useState({
@@ -9,6 +14,9 @@ const Signup = () => {
         email: "",
         password: "",
     });
+    const [message, setMessage] = useState("");
+    const navigate = useNavigate();
+    const {updateUserData} = useContext(UserContext);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -17,8 +25,22 @@ const Signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`Signed up as ${formData.email}`);
-        setFormData({ name: "", email: "", password: "" });
+        axios.post(`${BASE_URL}/auth/register/`,{ email:formData.email, password:formData.password, first_name:formData.name})
+		.then((response)=>{
+            let data = response.data.data;
+            let status_code = response.data.StatusCode;
+            console.log(data);
+            if( status_code === 6000 ){
+                localStorage.setItem("user_data", JSON.stringify(data));
+                updateUserData({type: "SIGNUP", payload:data});
+                navigate("/");
+            }else{
+                setMessage(response.data.message);
+            }
+		}).catch((error)=>{
+			console.log(error.response.data.message);
+		})
+        // setFormData({ name: "", email: "", password: "" });
     };
 
     const handleGoogleSignup = () => {
@@ -75,6 +97,7 @@ const Signup = () => {
                             <button type="submit" className="signup-btn">
                                 Sign Up
                             </button>
+                            {message && <small className="errorMsg">{message}</small>}
                         </form>
 
                         <div className="social-signup">

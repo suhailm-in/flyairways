@@ -122,6 +122,78 @@
             
     }
 }
+/* Profile Section */
+.profileWrapper {
+  position: relative;
+}
+
+.profileSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.profileSection:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.profileImg {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.arrow {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+.arrow.up {
+  transform: rotate(180deg);
+}
+
+/* Dropdown */
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 170px;
+  margin-top: 8px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  padding: 8px 0;
+  z-index: 100;
+}
+
+.dropdownMenu li a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.dropdownMenu li a:hover {
+  background: #f4f4f4;
+}
+
+.dropdownMenu .logout a {
+  color: #e63946;
+  font-weight: 600;
+}
 body {
   padding-top: 80px; /* Push body content below fixed navbar */
 }

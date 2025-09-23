@@ -1,18 +1,24 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import { MdOutlineTravelExplore } from "react-icons/md";
 import { IoIosCloseCircleOutline } from "react-icons/io";	
 import { TbGridDots } from "react-icons/tb";
+import { UserContext } from "../../../App";
 
 const NavBar = () => {
-	const [active, setActive] = useState('navBar')
+	const [active, setActive] = useState('navBar');
+	const [dropdownOpen, setDropdownOpen] = useState(false);
+  	const {userData, updateUserData} = useContext(UserContext);
 
 	const showNav = ()=>{
 		setActive('navBar activeNavbar')
-	}
+	};
 	const hideNav = ()=>{
 		setActive('navBar')
+	};
+	const hendleLogout = ()=>{
+		updateUserData({ type: "LOGOUT" })
 	}
 
     return (
@@ -45,17 +51,48 @@ const NavBar = () => {
 						<li className="navItem">
 							<NavLink to="/contact" className={({ isActive }) => isActive ? "navLink active" : "navLink"}>Contact</NavLink>
 						</li>
-						<li className="navBarBtn flex">
-							<Link to="/login" className="btn">Login</Link>
-						</li>
-						<li className="navBarBtn flex">
-							<Link to="/signup" className="btn">Signup</Link>
-						</li>
-					</ul>
+						{userData ? (
+							<li className="navItem profileWrapper">
+								<div
+								className="profileSection"
+								onClick={() => setDropdownOpen(!dropdownOpen)}
+								>
+									<img
+										src="https://i.pravatar.cc/40"
+										alt="profile"
+										className="profileImg"
+									/>
+									<span className="username">
+										{userData.name || "User"}
+									</span>
+									<span className={`arrow ${dropdownOpen ? "up" : "down"}`}>
+										▾
+									</span>
+								</div>
 
-					{/* <div className="navBarBtn flex">
-						<Link to="/" className="btn">BOOK NOW</Link>
-					</div> */}
+								{dropdownOpen && (
+									<ul className="dropdownMenu">
+										<li>
+											<Link to="/profile">Dashboard</Link>
+										</li>
+										<li>
+											<Link to="/settings">Settings</Link>
+										</li>
+										<li>
+											<Link to="/privacy">Privacy</Link>
+										</li>
+										<li className="logout">
+											<Link onClick={()=>hendleLogout()}>Logout</Link>
+										</li>
+									</ul>
+								)}
+							</li>
+						):(
+							<li className="navBarBtn flex">
+								<Link to="/login" className="btn">Login</Link>
+							</li>
+						)}
+					</ul>
 
 					<div className="closeNavbar" onClick={()=>hideNav()}>
 						<IoIosCloseCircleOutline className="icon"/>

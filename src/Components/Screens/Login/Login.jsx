@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { FaFacebookF, FaGoogle, FaTwitter } from "react-icons/fa";
 import "./Login.css";
 import NavBar from "../Navbar/NavBar";
 import axios from "axios";
 import { BASE_URL } from "../../../axiosConfig";
 import { Link, useNavigate } from "react-router-dom";
+import { UserContext } from "../../../App";
 
 const Login = () => {
     const [formData, setFormData] = useState({ email: "", password: "" });
     const [message, setMessage] = useState("");
     const navigate = useNavigate()
+    const {updateUserData} = useContext(UserContext);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -24,6 +26,7 @@ const Login = () => {
 			// console.log(response)
             let data = response.data;
             localStorage.setItem("user_data", JSON.stringify(data));
+            updateUserData({type: "LOGIN", payload:data});
             navigate("/");
 		}).catch((error)=>{
 			// console.log(error.response.status);
@@ -32,7 +35,6 @@ const Login = () => {
             }
 			
 		})
-        // alert(`Logged in as ${formData.email}`);
         // setFormData({ email: "", password: "" });
     };
 

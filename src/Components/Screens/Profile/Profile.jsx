@@ -7,7 +7,8 @@ const Profile = () => {
   const [user] = useState({
     name: "John Doe",
     email: "johndoe@example.com",
-    avatar: "https://i.pravatar.cc/150?img=3",
+    // avatar: "https://i.pravatar.cc/150?img=3",
+    avatar: "https://i.pravatar.cc/40",
   });
 
   const [bookings] = useState([

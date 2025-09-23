@@ -91,6 +91,13 @@
   transform: translateY(-2px);
 }
 
+.errorMsg {
+  font-size: 14px;
+  color: red;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
 /* Social Signup */
 .social-signup {
   margin-top: 1.5rem;

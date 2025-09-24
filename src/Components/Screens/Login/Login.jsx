@@ -1,17 +1,27 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FaFacebookF, FaGoogle, FaTwitter } from "react-icons/fa";
 import "./Login.css";
 import NavBar from "../Navbar/NavBar";
 import axios from "axios";
 import { BASE_URL } from "../../../axiosConfig";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../../../App";
+import queryString from "query-string";
 
 const Login = () => {
     const [formData, setFormData] = useState({ email: "", password: "" });
     const [message, setMessage] = useState("");
     const navigate = useNavigate()
     const {updateUserData} = useContext(UserContext);
+    const location = useLocation();
+    const [nextPath, setNexrPath] = useState("");
+
+    useEffect(()=>{
+        const {search} = location;
+        const value = queryString.parse(search);
+        const {next} = value;
+        setNexrPath(next);
+    }, [location])
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -23,17 +33,15 @@ const Login = () => {
         setMessage("");
 		axios.post(`${BASE_URL}/auth/token/`,{ username:formData.email, password:formData.password})
 		.then((response)=>{
-			// console.log(response)
             let data = response.data;
             localStorage.setItem("user_data", JSON.stringify(data));
             updateUserData({type: "LOGIN", payload:data});
-            navigate("/");
+            nextPath ? navigate(nextPath) : navigate("/");
 		}).catch((error)=>{
 			// console.log(error.response.status);
             if(error.response.data.detail){
                 setMessage(error.response.data.detail);
             }
-			
 		})
         // setFormData({ email: "", password: "" });
     };

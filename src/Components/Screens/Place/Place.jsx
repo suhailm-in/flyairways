@@ -1,19 +1,30 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./Place.css";
 import NavBar from "../Navbar/NavBar";
 import { BASE_URL } from "../../../axiosConfig";
+import { UserContext } from "../../../App";
 
 const PlaceSingle = () => {
   const { id } = useParams(); // get place id from URL
-  const [place, setPlace] = useState(null);
+  const [place, setPlace] = useState({
+        name: "",
+        gallery: [],
+    });
   const [loading, setLoading] = useState(true);
+  const {userData} = useContext(UserContext)
+  
 
   useEffect(() => {
     const fetchPlace = async () => {
       try {
-        const response = await axios.get(`${BASE_URL}/places/view/${id}/`);
+        // const response = await axios.get(`${BASE_URL}/places/view/${id}/`);
+        const response = await axios.get(`${BASE_URL}/places/protected/${id}/`,{
+          headers:{
+            Authorization:`Bearer ${userData?.access}`
+          }
+        });
         setPlace(response.data.data);
       } catch (error) {
         console.error("Error fetching place:", error);
@@ -22,10 +33,10 @@ const PlaceSingle = () => {
       }
     };
     fetchPlace();
-  }, [id]);
+  }, [id, userData]);
 
   if (loading) return <div className="loading">Loading...</div>;
-  if (!place) return <div className="error">Place not found</div>;
+  // if (!place) return <div className="error">Place not found</div>;
 
   return (
     <>

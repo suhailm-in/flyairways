@@ -13,12 +13,15 @@ import Blogs from "./Components/Screens/Blogs/Blogs";
 import Profile from "./Components/Screens/Profile/Profile";
 import ForgotPassword from "./Components/Screens/ForgotPassword/ForgotPassword";
 import React, { useEffect, useState } from "react";
+import PrivetRoute from "./Components/PrivetRoute";
 
 export const UserContext = React.createContext();
 
 
+
 function App() {
     const [userData, setUserData] = useState({})
+    const [loading, setLoading] = useState(true);
 
     const updateUserData = (action) => {
         switch (action.type) {
@@ -38,9 +41,13 @@ function App() {
     };
 
     useEffect(()=>{
-        setUserData(JSON.parse(localStorage.getItem("user_data")))
+        setUserData(JSON.parse(localStorage.getItem("user_data")));
+        setLoading(false);
     }, [])
-    return (
+    
+    return loading?(
+        <h1>Loading.....</h1>
+    ) : (
         <UserContext.Provider value={{userData, updateUserData}}>
             <Router>
                 <Routes>
@@ -48,12 +55,12 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/destination" element={<Destinations />} />
                     <Route path="/packages" element={<PackgesDetails />} />
-                    <Route path="packages/:id" element={<Place />} />
+                    <Route path="packages/:id" element={<PrivetRoute Component={Place} />} />
                     <Route path="/blogs" element={<Blogs />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup" element={<Signup />} />
-                    <Route path="/profile" element={<Profile />} />
+                    <Route path="/profile" element={<PrivetRoute Component={Profile} />} />
                     <Route path="/forgotpass" element={<ForgotPassword />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>

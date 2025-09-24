@@ -25,6 +25,7 @@ const Signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setMessage("");
         axios.post(`${BASE_URL}/auth/register/`,{ email:formData.email, password:formData.password, first_name:formData.name})
 		.then((response)=>{
             let data = response.data.data;

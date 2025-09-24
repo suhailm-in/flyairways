@@ -10,6 +10,12 @@ const NavBar = () => {
 	const [active, setActive] = useState('navBar');
 	const [dropdownOpen, setDropdownOpen] = useState(false);
   	const {userData, updateUserData} = useContext(UserContext);
+	const [user] = useState({
+		name: "John Doe",
+		email: "johndoe@example.com",
+		// avatar: "https://i.pravatar.cc/150?img=3",
+		avatar: "https://i.pravatar.cc/40",
+	  });
 
 	const showNav = ()=>{
 		setActive('navBar activeNavbar')
@@ -63,7 +69,7 @@ const NavBar = () => {
 										className="profileImg"
 									/>
 									<span className="username">
-										{userData.name || "User"}
+										{userData.name || user.name || "User"}
 									</span>
 									<span className={`arrow ${dropdownOpen ? "up" : "down"}`}>
 										▾
@@ -73,13 +79,13 @@ const NavBar = () => {
 								{dropdownOpen && (
 									<ul className="dropdownMenu">
 										<li>
-											<Link to="/profile">Dashboard</Link>
+											<Link to="/dashboard">Dashboard</Link>
 										</li>
 										<li>
 											<Link to="/settings">Settings</Link>
 										</li>
 										<li>
-											<Link to="/privacy">Privacy</Link>
+											<Link to="/privacyterms">Privacy</Link>
 										</li>
 										<li className="logout">
 											<Link onClick={()=>hendleLogout()}>Logout</Link>

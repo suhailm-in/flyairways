@@ -1,0 +1,73 @@
+.profile-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  // padding-top: 80px;
+}
+
+/* Content */
+.profile-content {
+  flex: 1;
+  padding: 120px 30px 30px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .booking-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .booking-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+
+    h4 {
+      margin-bottom: 10px;
+    }
+
+    .confirmed { color: green; }
+    .pending { color: orange; }
+    .cancelled { color: red; }
+
+    button {
+      margin-top: 10px;
+      background: #1a1a2e;
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background: #0f3460;
+      }
+    }
+  }
+}
+
+/* Responsive */
+// @media (max-width: 768px) {
+  // .profile-page {
+  //   flex-direction: column;
+  // }
+
+  // .profile-sidebar {
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   width: 100%;
+  //   padding: 10px;
+
+  //   .user-info {
+  //     flex-direction: row;
+  //     img {
+  //       width: 40px;
+  //       height: 40px;
+  //     }
+  //   }
+  // }
+// }

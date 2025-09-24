@@ -1,0 +1,143 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColors: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(
+        to right,
+        hsl(187, 85%, 43%),
+        hsl(199, 100%, 33%)
+    );
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --InputColor: #f5f5f7;
+    --bodyColor: #f0f0f6;
+    --cardBG: #ffffff;
+}
+
+.main-div {
+    display: flex;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    // padding-top: 80px;
+}
+
+/* PAGE */
+.settings-page {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--textColor);
+    padding-top: 80px;
+}
+
+/* TITLE */
+.settings-page h1 {
+    font-size: 2rem;
+    color: var(--PrimaryColor);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* CARD SECTIONS */
+.settings-section {
+    background: var(--cardBG);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.settings-section h2 {
+    font-size: 1.5rem;
+    color: var(--SecondaryColors);
+    margin-bottom: 1.5rem;
+}
+
+/* FORM */
+.settings-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.input-row label {
+    flex: 1;
+}
+
+.settings-section label {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.settings-section input[type="text"],
+.settings-section input[type="email"],
+.settings-section input[type="password"] {
+    margin-top: 0.5rem;
+    padding: 0.65rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: var(--InputColor);
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.settings-section input[type="text"]:focus,
+.settings-section input[type="email"]:focus,
+.settings-section input[type="password"]:focus {
+    outline: none;
+    border-color: var(--PrimaryColor);
+    box-shadow: 0 0 6px rgba(0, 128, 255, 0.15);
+}
+
+/* CHECKBOXES */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+/* BUTTON */
+.save-btn {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    background: var(--gradientColor);
+    color: var(--whiteColor);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 0.5rem;
+}
+
+.save-btn:hover {
+    opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .input-row {
+        flex-direction: column;
+    }
+
+    .settings-page {
+        padding: 1rem;
+    }
+
+    .settings-page h1 {
+        font-size: 1.8rem;
+    }
+
+    .settings-section h2 {
+        font-size: 1.3rem;
+    }
+}

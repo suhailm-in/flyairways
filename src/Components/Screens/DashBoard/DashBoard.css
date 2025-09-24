@@ -1,0 +1,51 @@
+.profile-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Content */
+.profile-content {
+  flex: 1;
+  padding: 120px 30px 30px;
+}
+.profile-content h2 {
+  margin-bottom: 20px;
+}
+.profile-content .booking-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.profile-content .booking-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.profile-content .booking-card h4 {
+  margin-bottom: 10px;
+}
+.profile-content .booking-card .confirmed {
+  color: green;
+}
+.profile-content .booking-card .pending {
+  color: orange;
+}
+.profile-content .booking-card .cancelled {
+  color: red;
+}
+.profile-content .booking-card button {
+  margin-top: 10px;
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.profile-content .booking-card button:hover {
+  background: #0f3460;
+}
+
+/* Responsive *//*# sourceMappingURL=DashBoard.css.map */

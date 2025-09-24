@@ -1,0 +1,103 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColors: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(
+    to right,
+    hsl(187, 85%, 43%),
+    hsl(199, 100%, 33%)
+  );
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --bodyColor: rgb(240, 240, 246);
+}
+
+/* PAGE LAYOUT */
+.privacy-page {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bodyColor);
+  font-family: "Poppins", sans-serif;
+  padding-top: 80px;
+}
+
+/* LEFT INFO */
+.privacy-info {
+  flex: 1;
+  background: var(--gradientColor);
+  color: var(--whiteColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.privacy-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-info span {
+  font-weight: bold;
+  color: var(--blackColor);
+  background: var(--whiteColor);
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+.privacy-info ul {
+  list-style: none;
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+.privacy-info li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+/* RIGHT CONTENT */
+.privacy-content {
+  flex: 2;
+  background: var(--whiteColor);
+  padding: 3rem;
+  overflow-y: auto;
+}
+
+.privacy-content h2 {
+  font-size: 1.8rem;
+  color: var(--PrimaryColor);
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.privacy-content p {
+  color: var(--textColor);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.privacy-content a {
+  color: var(--SecondaryColors);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.privacy-content a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .privacy-page {
+    flex-direction: column;
+  }
+  .privacy-info {
+    display: none;
+  }
+  .privacy-content {
+    flex: none;
+    width: 100%;
+    padding: 2rem;
+  }
+}/*# sourceMappingURL=PrivacyTerms.css.map */

@@ -10,10 +10,13 @@ import Destinations from "./Components/Screens/Destinations/Destinations";
 import Place from "./Components/Screens/Place/Place";
 import PackgesDetails from "./Components/Screens/PackgesDetails/PackgesDetails";
 import Blogs from "./Components/Screens/Blogs/Blogs";
-import Profile from "./Components/Screens/Profile/Profile";
 import ForgotPassword from "./Components/Screens/ForgotPassword/ForgotPassword";
 import React, { useEffect, useState } from "react";
 import PrivetRoute from "./Components/PrivetRoute";
+import PrivacyTerms from "./Components/Screens/PrivacyTerms/PrivacyTerms";
+import Settings from "./Components/Screens/Settings/Settings";
+import DashBoard from "./Components/Screens/DashBoard/DashBoard";
+import MyBookings from "./Components/Screens/MyBookings/MyBookings";
 
 export const UserContext = React.createContext();
 
@@ -60,9 +63,12 @@ function App() {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup" element={<Signup />} />
-                    <Route path="/profile" element={<PrivetRoute Component={Profile} />} />
+                    <Route path="/dashboard" element={<PrivetRoute Component={DashBoard} />} />
                     <Route path="/forgotpass" element={<ForgotPassword />} />
                     <Route path="*" element={<NotFound />} />
+                    <Route path="/privacyterms" element={<PrivacyTerms />} />
+                    <Route path="/settings" element={<Settings />} />
+                    <Route path="/mybookings" element={<MyBookings />} />
                 </Routes>
             </Router>
         </UserContext.Provider>

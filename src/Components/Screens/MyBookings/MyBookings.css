@@ -1,0 +1,129 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColors: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%,16%);
+  --textColor: hsl(240,4%, 36%);
+  --bodyColor: rgb(240,240,246);
+  --cardBG: #fff;
+}
+
+.main-div {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.bookings-page {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  font-family: "Poppins", sans-serif;
+  padding-top: 80px;
+}
+
+.bookings-page h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--PrimaryColor);
+  margin-bottom: 2rem;
+}
+
+.bookings-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* BOOKING CARD */
+.booking-card {
+  background: var(--cardBG);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.booking-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.card-header h2 {
+  font-size: 1.2rem;
+  color: var(--SecondaryColors);
+}
+
+.status {
+  padding: 0.2rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+
+.status.confirmed {
+  background: hsl(142, 60%, 40%);
+}
+
+.status.pending {
+  background: hsl(39, 100%, 50%);
+}
+
+.status.cancelled {
+  background: hsl(0, 80%, 50%);
+}
+
+.booking-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: var(--whiteColor);
+}
+
+.view-btn {
+  background: var(--PrimaryColor);
+}
+
+.cancel-btn {
+  background: hsl(0, 80%, 50%);
+}
+
+.download-btn {
+  background: var(--SecondaryColors);
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .bookings-page {
+    padding: 1rem;
+  }
+  .card-actions {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=MyBookings.css.map */

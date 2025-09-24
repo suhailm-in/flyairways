@@ -1,0 +1,129 @@
+/* Sidebar */
+.profile-sidebar {
+  width: 250px;
+  background: #1a1a2e;
+  color: #fff;
+  padding: 20px;
+  // transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+
+  &.collapsed {
+    width: 80px;
+
+    .user-info h3,
+    .user-info p{
+      display: none;
+    }
+    .user-info img {
+      width: 30px;
+      height: 30px;
+      border-radius: 4px;
+    }
+
+    .user-info{
+      margin: 0;
+    }
+    .sidebar-menu a {
+      justify-content: center;
+      font-size: 35px;
+      background: none;
+    //   padding-top: 20px;
+    padding: 9px;
+    //   border-radius: 10px;
+    
+    }
+    .sidebar-header{
+      // display: flex;
+      // justify-content: center;
+      margin-bottom: 10px;
+    }
+    .toggle-btn{
+      margin: 0 auto;
+      font-size: 30px;
+    }
+  }
+
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    h2 {
+      font-size: 1.2rem;
+      margin-left: 10px;
+    }
+  }
+
+  .toggle-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .user-info {
+    text-align: center;
+    margin: 20px 0;
+
+    img {
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin: 5px 0;
+    }
+
+    p {
+      font-size: 0.85rem;
+      color: #bbb;
+    }
+  }
+
+  .sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    a {
+      color: #fff;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: #16213e;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+/* Responsive */
+// @media (max-width: 768px) {
+//   .profile-sidebar {
+//     flex-direction: row;
+//     justify-content: space-between;
+//     width: 100%;
+//     padding: 10px;
+
+//     .user-info {
+//       flex-direction: row;
+//       img {
+//         width: 40px;
+//         height: 40px;
+//       }
+//     }
+//   }
+// }
